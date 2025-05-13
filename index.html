@@ -4,8 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
     <style>
-        font-family: 'Courier New', Courier, monospace;
+        *{
+font-family: 'Courier New', Courier, monospace;
+        }
+        
         body {
             margin: 0;
             padding: 0;
@@ -56,10 +60,55 @@
         #hero-section a {
             padding-inline: 20px;
         }
+        #bar{
+            display: none;
+        }
+         @media only screen and (max-width: 1200px){
+            #hero-section {
+                padding-inline: 10%;
+            }
+            #hero-section img {
+                width: 400px;
+            }
+             #hero-section h1 {
+                font-size: 40px;
+            }
+         }
+        @media only screen and (max-width: 768px){
+            nav ul {
+            display: none;
+            }
+            nav #bar{
+              display: block;  
+            }
+            #bar{
+                display: block;
+            }
+            #hero-section {
+                display: block;
+                padding-inline: 10%;
+                padding-block: 50px;
+            }
+            #hero-section h1 {
+            font-size: 40px;
+            }
+              #hero-section img {
+            width: 100px;
+            }
+        }
+        @media only screen and (max-width: 600px){
+            *{
+                font-size: 16px;
+            }
+            #hero-section h1 {
+            font-size: 38px;
+            }
+        }
     </style>
 </head>
 <body>
     <nav>
+        <i id="bar" class="fa-solid fa-bars"></i>
         <ul>
             <li>Home</li>
             <li>About</li>
